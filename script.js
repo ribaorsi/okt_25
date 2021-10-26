@@ -1,14 +1,20 @@
-function toggleClicked (event) {
-    event.target.classList.toggle("clicked");
-    document.getElementById("nav").classList.toggle("clicked");
+// function toggleClicked (event) {
+//     event.target.classList.toggle("clicked");
+//     document.getElementById("nav").classList.toggle("clicked");
+//     console.log("the button is clicked")
+// }
+
+function buttonClicked (event) {
+    event.target.classList.toggle("clicked")
+    document.getElementById("bodyId").classList.toggle("clicked")
     console.log("the button is clicked")
 }
 
 function loadEvent() {
     console.log('the page has loaded');
 
-    document.getElementById('menu-btn').addEventListener('click', toggleClicked); 
-
+    //document.getElementById('menu-btn').addEventListener('click', buttonClicked); 
+    document.getElementById('bodyId').addEventListener('click', buttonClicked); 
 }
 
 window.addEventListener("load", loadEvent);
