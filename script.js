@@ -13,7 +13,7 @@ function buttonClicked (event) {
 function loadEvent() {
     console.log('the page has loaded');
 
-    //document.getElementById('menu-btn').addEventListener('click', buttonClicked); 
+    //document.getElementById('menu-btn').addEventListener('click', toggleClicked); 
     document.getElementById('bodyId').addEventListener('click', buttonClicked); 
 }
 
